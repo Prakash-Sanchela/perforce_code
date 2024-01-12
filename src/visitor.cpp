@@ -48,7 +48,6 @@ int main(int argc, char* argv[]) {
                                                 minute as key and number of visitors as value*/
 
     // Update visitors count for each minute
-    int count = 0;
     for (const auto& entry : entries) {
         int inTimeMinutes = convertToMinutes(entry.inTime);
         int outTimeMinutes = convertToMinutes(entry.outTime);
